@@ -133,6 +133,11 @@ p {
   margin-top: 24px;
 }
 
+.problem-lg {
+  visibility: hidden;
+  width: 0px;
+}
+
 .solution-block {
   display: flex;
   flex-direction: column;
@@ -274,14 +279,76 @@ footer p {
 
 @media (min-width: 1000px) {
   .arrived-logo {
-    height: 40px;
+    height: 45px;
   }
 
   .ischool-logo-sm {
-    height: 40px;
+    height: 45px;
   }
 
   .line {
     height: 5;
   }
+
+  #home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 124px;
+  }
+
+  .lg-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-right: 50px;
+    width: 50%;
+  }
+
+  .lg-col p,
+  .lg-col h1 {
+    text-align: left;
+  }
+
+  .lg-col h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .zoom-house-container {
+    width: 500px;
+  }
+
+  .zoom-sm {
+    width: 150px;
+    bottom: -90px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  #problem p {
+    max-width: 700px;
+  }
+
+  .problem-sm {
+    visibility: hidden;
+    width: 0px;
+  }
+
+  .problem-lg {
+    visibility: visible;
+    width: 350px;
+  }
+
+  #problem {
+    flex-direction: row;
+  }
+
 }
