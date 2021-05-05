@@ -1,17 +1,30 @@
 body {
-    /* display: flex;
+  /* display: flex;
     flex-direction: column; */
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 32px;
-    /* align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 32px;
+  /* align-items: center;
     background-color: red */
 }
 
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
@@ -27,18 +40,48 @@ header {
 }
 
 .ischool-logo-sm {
-    height: 25px;
+  height: 25px;
 }
 
 .line {
-    width: 100%;
-    height: 2px;
-    background-color: #47CE90;
+  width: 100%;
+  height: 2px;
+  background-color: #47ce90;
 }
 
 .main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#home h1 {
+  margin-bottom: 0px;
+}
+
+.highlight {
+  color: #6976e1;
+  font-weight: bold;
+}
+
+.zoom-house-container {
+  width: 90%;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.zoom-sm {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.house-sm {
+  position: absolute;
+  width: 300px;
 }
