@@ -7,6 +7,14 @@
     <meta name="author" content="Kyle Kusche" />
     <meta name="description" content="Landing Page for the Arrived Homes capstone group information school at UW" />
     <meta name="keywords" content="arrived,homes,capstone,ischool,uw,kyle,kusche" />
+    <!-- Custom Font -->
+    <style type="text/css">
+    @font-face {
+        font-family: cooperblack;
+        src: url('./fonts/CooperBlackRegular.ttf') format("truetype");
+    }
+    </style>
+    
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
@@ -34,7 +42,7 @@
         <div class="line"></div>
     </header>
     <main>
-        <section class="main-section" id="home">
+        <section id="home">
             <h1>Acquisition Assistant</h1>
             <p>A platform designed to help scale the <span class="highlight">underwriting</span> & <span class="highlight">purchases</span> of real estate properties for a local prop-tech startup.</p>
 
@@ -44,14 +52,14 @@
             </div>
         </section>
 
-        <section class="main-section" id="problem">
+        <section id="problem">
             <h2>The Problem</h2>
             <p>At the start, all underwriting was done through spreadsheet calculations and manually sifting through active listings.</p>
             <p>The startup was growing daily and this method was not a long-term viable solution.</p>
                 <img src="./img/problem-group.svg" alt="angry person, spreadsheet, clock" class="problem-sm" />
         </section>
 
-        <section class="main-section" id="solution">
+        <section id="solution">
             <h2>The Solution</h2>
             <div class="solution-block">
                 <image src="./img/server-blue.svg" alt="server"/>
@@ -60,18 +68,81 @@
             </div>
 
             <div class="row solution-row">
-            <div class="solution-block">
-                <image src="./img/keys-blue.svg" alt="server" />
-                <p class="solution-title">Underwriting</p>
-                <p>Perform client-specific calculations for every new property.</p>
-            </div>
+                <div class="solution-block">
+                    <image src="./img/keys-blue.svg" alt="server" />
+                    <p class="solution-title">Underwriting</p>
+                    <p>Perform client-specific calculations for every new property.</p>
+                </div>
 
-            <div class="solution-block">
-                <image src="./img/desktop-blue.svg" alt="server" />
-                <p class="solution-title">Visualization</p>
-                <p>Display to arrived properties that best fit their investment cirteria.</p>
-            </div>
+                <div class="solution-block">
+                    <image src="./img/desktop-blue.svg" alt="server" />
+                    <p class="solution-title">Visualization</p>
+                    <p>Display to arrived properties that best fit their investment cirteria.</p>
+                </div>
             </div>
         </section>
+
+        <section id="assistant">
+            <h2>The Acquisition Assistant</h2>
+            <image src="./img/mac.svg" alt="macbook with app on it" class="mac-sm" />
+            <p>Filter bar allows the investor to search and sort for investments based on location, house type, house features, and specific Arrived Homes data features.</p>
+            <p>Interactive map visualizes the locations of hundreds of home investments within the Arrived Homes housing markets.</p>
+            <p>Arrived Homes specific data calculations are utilized to inform the client of financially sound investment opportunities.</p>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+
+            <div class="about-block row">
+                <image src="./img/kusche12.jpg" alt="profile image" class="about-sm" />
+                <div class="col">
+                    <p class="about-title">Kyle Kusche</p>
+                    <p class="about-para">As a front-end engineer, I believe in the importance of user-focused design and development. By majoring in
+                    Informatics at the University of Washington, I have had the opportunity to create highly accessible solutions for myriad
+                    user needs. I plan on continuing my path of developing highly intuitive solutions by working as a Full-Stack Software
+                    Engineer at Microsoft after graduation.</p>
+                </div>
+            </div>
+
+            <div class="about-block row">
+                <image src="./img/ulfers.jpeg" alt="profile image" class="about-sm" />
+                <div class="col">
+                    <p class="about-title">Austin Ulfers</p>
+                    <p class="about-para">I am grateful for all the the University of Washington has offered me within the Informatics program! My passion for
+                    data has allowed me to navigate problems and implement cross-discipline solutions with data driven decisions. I will be
+                    continuing my data journey next year at Moss Adams as a Business Intelligence Analyst.</p>
+                </div>
+            </div>
+
+            <div class="about-block row">
+                <image src="./img/ulfers.jpeg" alt="profile image" class="about-sm" />
+                <div class="col">
+                    <p class="about-title">Austin Ulfers</p>
+                    <p class="about-para">I am grateful for all the the University of Washington has offered me within the
+                        Informatics program! My passion for
+                        data has allowed me to navigate problems and implement cross-discipline solutions with data driven
+                        decisions. I will be
+                        continuing my data journey next year at Moss Adams as a Business Intelligence Analyst.</p>
+                </div>
+            </div>
+
+            <div class="about-block row">
+                <image src="./img/ulfers.jpeg" alt="profile image" class="about-sm" />
+                <div class="col">
+                    <p class="about-title">Austin Ulfers</p>
+                    <p class="about-para">I am grateful for all the the University of Washington has offered me within the
+                        Informatics program! My passion for
+                        data has allowed me to navigate problems and implement cross-discipline solutions with data driven
+                        decisions. I will be
+                        continuing my data journey next year at Moss Adams as a Business Intelligence Analyst.</p>
+                </div>
+            </div>
+
+        </section>
     </main>
+    <footer>
+        <div class="line"></div>
+        <p><span class="bold">Learn More:</span> arrived-homes-capstone.github.io | arrivedhomes.com</p>
+        <img src="./img/iSchoolPrimary_RGB_Black.svg" alt="iSchool logo" class="ischool-logo-sm" />
+    </footer>
 </body>
