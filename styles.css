@@ -78,6 +78,7 @@ p {
 
 #home p {
   margin-bottom: 36px;
+  max-width: 550px;
 }
 
 .highlight {
@@ -86,7 +87,7 @@ p {
 }
 
 .zoom-house-container {
-  width: 90%;
+  width: 300px;
   height: 210px;
   display: flex;
   flex-direction: column;
@@ -104,7 +105,7 @@ p {
 
 .house-sm {
   position: absolute;
-  width: 300px;
+  width: 100%;
 }
 
 #problem {
@@ -122,10 +123,12 @@ p {
 #problem h2 {
   color: white;
   width: 90%;
+  max-width: 500px;
 }
 
 .problem-sm {
   width: 50%;
+  max-width: 250px;
   align-self: center;
   margin-top: 24px;
 }
@@ -139,9 +142,11 @@ p {
   border-radius: 6px;
 
   width: 38%;
+  max-width: 200px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
+  padding-top: 16px;
 
   -webkit-box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.4);
@@ -186,6 +191,7 @@ p {
 .mac-sm {
   width: 100%;
   height: auto;
+  max-width: 500px;
 }
 
 #assistant p,
@@ -195,6 +201,7 @@ p {
 
 #assistant p {
   width: 80%;
+  max-width: 500px;
 }
 
 .about-sm {
@@ -213,6 +220,8 @@ p {
 
 .about-block {
   width: 100%;
+  margin-bottom: 32px;
+  max-width: 450px;
 }
 
 .about-block p {
@@ -237,4 +246,42 @@ footer p {
 
 .bold {
   font-weight: 500;
+}
+
+@media (min-width: 700px) {
+  .arrived-logo {
+    height: 30px;
+  }
+
+  .ischool-logo-sm {
+    height: 30px;
+  }
+
+  header {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .zoom-house-container {
+    width: 400px;
+    height: 260px;
+  }
+
+  .zoom-sm {
+    width: 110px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .arrived-logo {
+    height: 40px;
+  }
+
+  .ischool-logo-sm {
+    height: 40px;
+  }
+
+  .line {
+    height: 5;
+  }
 }
