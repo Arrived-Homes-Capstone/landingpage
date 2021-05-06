@@ -138,6 +138,12 @@ p {
   width: 0px;
 }
 
+.problem-col-lg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .solution-block {
   display: flex;
   flex-direction: column;
@@ -162,14 +168,17 @@ p {
   margin-bottom: 36px;
 }
 
-.solution-block p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .solution-title {
+  margin-bottom: 0px;
+  margin-top: 0px;
   font-weight: 500;
   font-size: 18px;
+}
+
+.solution-para {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 16px;
 }
 
 .solution-block img {
@@ -178,8 +187,17 @@ p {
 }
 
 .solution-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 32px;
   justify-content: space-around;
+}
+
+.solution-row-lg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #assistant {
@@ -312,8 +330,8 @@ footer p {
     text-align: left;
   }
 
-  .lg-col h1 {
-    font-size: 48px;
+  h1 {
+    font-size: 50px;
   }
 
   p {
@@ -330,7 +348,7 @@ footer p {
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 55px;
   }
 
   #problem p {
@@ -344,11 +362,77 @@ footer p {
 
   .problem-lg {
     visibility: visible;
-    width: 350px;
+    width: 300px;
+    margin-left: 300px;
   }
 
   #problem {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
+  .problem-col-lg {
+    align-items: flex-start;
+    width: 35%;
+  }
+
+  .problem-col-lg p,
+  .problem-col-lg h2 {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  #solution {
+    width: 100%;
+  }
+
+  #solution h2 {
+    margin-bottom: 100px;
+  }
+
+  .solution-row-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+    max-width: 1000px;
+    height: 100%;
+  }
+
+  .solution-row {
+    align-self: flex-start;
+    flex-direction: row;
+    width: 66%;
+    margin-top: 0px;
+  }
+
+  .solution-block {
+    width: 500px;
+    height: 225px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .solution-block img {
+    height: 35%;
+    width: auto;
+  }
+
+  .solution-block p {
+    margin-top: 16px;
+  }
+
+  .solution-title {
+    font-size: 22px;
+    margin-top: 32px;
+  }
+
+  .solution-para {
+    margin-top: 0px;
+    font-size: 18px;
+  }
 }
