@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: black;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -478,6 +482,10 @@ footer p {
     color: white;
   }
 
+  .about-block {
+    margin-left: 32px;
+  }
+
   .ass-col {
     width: 20%;
   }
@@ -517,10 +525,14 @@ footer p {
     flex-direction: row;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left: 150px;
+    margin-left: 110px;
   }
 
   footer p {
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  .ischool-logo-xs {
+    width: 200px;
   }
 }
