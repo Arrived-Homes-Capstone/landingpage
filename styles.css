@@ -217,6 +217,11 @@ p {
   max-width: 500px;
 }
 
+#assistant-wide {
+  visibility: hidden;
+  height: 0px;
+}
+
 #assistant p,
 #assistant h2 {
   color: white;
@@ -305,7 +310,9 @@ footer p {
   }
 
   .line {
-    height: 5;
+    margin-top: 16px;
+    height: 7;
+    width: 97%;
   }
 
   #home {
@@ -434,5 +441,86 @@ footer p {
   .solution-para {
     margin-top: 0px;
     font-size: 18px;
+  }
+
+  #assistant {
+    visibility: hidden;
+    height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  #assistant-wide {
+    visibility: visible;
+    height: auto;
+    background-color: #333;
+    width: 105%;
+
+    margin-top: 36px;
+    padding-top: 36px;
+    padding-bottom: 72px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #assistant-wide p {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  #assistant-wide p,
+  #assistant-wide h2 {
+    color: white;
+  }
+
+  .ass-col {
+    width: 20%;
+  }
+
+  .ass-col1 {
+    margin-top: 50px;
+  }
+
+  .ass-col3 {
+    margin-top: 100px;
+  }
+
+  .mac-lg {
+    width: 100%;
+  }
+
+  .ass-col-p2 {
+    margin-bottom: 150px;
+  }
+
+  #about-us h2 {
+    font-size: 36px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-para {
+    font-size: 16px;
+  }
+
+  .about-us-wrap {
+    margin-top: 48px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 150px;
+  }
+
+  footer p {
+    font-size: 22px;
   }
 }
