@@ -523,30 +523,13 @@ footer p {
     max-width: 800px;
   }
 
-  /* .spons-num-container p {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    color: white;
-    position: absolute;
-    top: 15px;
+  .problem-img-container {
+    visibility: visible;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .spons-title {
-    font-family: cooperblack;
-    font-size: 32px;
-    margin-bottom: 8px;
-  }
-
-  .spons-descr-2 {
-    font-size: 18px;
-  }
-
-  .spons-title,
-  .spons-descr-2 {
-    width: 90%;
-    text-align: center;
-  } */
 
   .problem-col-lg {
     align-items: flex-start;
@@ -572,7 +555,7 @@ footer p {
   .problem-lg {
     visibility: visible;
     width: 300px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
   }
 
   #problem {
@@ -702,10 +685,6 @@ footer p {
     margin-bottom: 150px;
   }
 
-  #about-us h2 {
-    font-size: 36px;
-  }
-
   .about-title {
     font-size: 22px;
   }
@@ -724,11 +703,57 @@ footer p {
     flex-wrap: wrap;
   }
 
+  #next {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  #next p {
+    max-width: 800px;
+  }
+
   footer p {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .ischool-logo-xs {
     width: 200px;
+  }
+}
+
+@media (min-width: 1500px) {
+  section {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .zoom-house-container {
+    width: 600px;
+  }
+
+  .zoom-sm {
+    top: 250px;
+  }
+
+  .problem-img-container {
+    width: 40%;
+    align-items: flex-end;
+  }
+
+  .problem-lg {
+    width: 350px;
+  }
+
+  #solution {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  #assistant-wide {
+    height: 95vh;
+  }
+
+  #video {
+    max-height: 850px;
   }
 }
