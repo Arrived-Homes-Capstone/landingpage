@@ -36,21 +36,26 @@ section {
   font-size: 30px;
 }
 
+a {
+  color: black;
+}
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 32px;
   text-align: center;
 }
 
-a {
-  color: black;
-}
-
 h2 {
-  font-family: "Josefin Sans", sans-serif;
   font-size: 32px;
   text-align: center;
   font-family: cooperblack;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
 }
 
 p {
@@ -121,6 +126,77 @@ p {
 .house-sm {
   position: absolute;
   width: 100%;
+}
+
+.spons-row h3 {
+  margin-right: 10px;
+}
+
+#sponsor p {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.spons-how-p {
+  color: #72d59c;
+}
+
+.spons-descr {
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.spons-container {
+  width: 300px;
+  height: 250px;
+  background-color: #bbf3be;
+  padding-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.spons-num-container {
+  width: 60px;
+  height: 60px;
+  background-color: #72d59c;
+  border: solid 1px #72d59c;
+  border-radius: 4px;
+  border-top-right-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  margin-bottom: 16px;
+}
+
+.spons-num-container p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  top: 15px;
+}
+
+.spons-title {
+  font-family: cooperblack;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.spons-descr-2 {
+  font-size: 18px;
+}
+
+.spons-title,
+.spons-descr-2 {
+  width: 90%;
+  text-align: center;
 }
 
 #problem {
@@ -250,6 +326,38 @@ p {
   max-width: 500px;
 }
 
+#video {
+  margin-top: 0px;
+  padding-top: 0px;
+  /* margin-bottom: 0px;
+  padding-bottom: 0px; */
+}
+
+#video h2 {
+  font-size: 30px;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 550px;
+  border: 0;
+}
+
 #about-us {
   margin-top: 0px;
   padding-top: 0px;
@@ -325,6 +433,15 @@ footer p {
   .zoom-sm {
     width: 110px;
   }
+
+  #video h2 {
+    font-size: 36px;
+  }
+
+  #video {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -346,8 +463,8 @@ footer p {
     width: 90%;
     margin-top: 64px;
     margin-bottom: 64px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   #home {
@@ -379,8 +496,57 @@ footer p {
   }
 
   h2 {
-    font-size: 55px;
+    font-size: 48px;
   }
+
+  .spons-row-lg {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .spons-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0px;
+  }
+
+  .spons-num-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .spons-descr {
+    max-width: 800px;
+  }
+
+  /* .spons-num-container p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    top: 15px;
+  }
+
+  .spons-title {
+    font-family: cooperblack;
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .spons-descr-2 {
+    font-size: 18px;
+  }
+
+  .spons-title,
+  .spons-descr-2 {
+    width: 90%;
+    text-align: center;
+  } */
 
   .problem-col-lg {
     align-items: flex-start;
@@ -420,7 +586,7 @@ footer p {
   }
 
   #solution h2 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   #solution {
