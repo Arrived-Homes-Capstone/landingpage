@@ -1,10 +1,10 @@
-body {
-  margin-top: 36px;
+html {
   overflow-x: hidden;
 }
 
-a {
-  color: black;
+body {
+  margin-top: 36px;
+  overflow-x: hidden;
 }
 
 main {
@@ -26,13 +26,24 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 36px;
+  width: 95%;
+  margin-bottom: 24px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+#home h1 {
+  font-size: 30px;
 }
 
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 32px;
   text-align: center;
+}
+
+a {
+  color: black;
 }
 
 h2 {
@@ -46,7 +57,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 .row {
@@ -113,8 +124,8 @@ p {
 }
 
 #problem {
-  width: 105%;
   background-color: #6976e1;
+  width: 100%;
   margin-top: 36px;
   padding-top: 36px;
   padding-bottom: 36px;
@@ -168,6 +179,10 @@ p {
   box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.4);
 }
 
+#solution {
+  width: 100%;
+}
+
 #solution h2 {
   margin-bottom: 36px;
 }
@@ -183,6 +198,7 @@ p {
   margin-bottom: 0px;
   margin-top: 0px;
   font-size: 16px;
+  text-align: center;
 }
 
 .solution-block img {
@@ -206,17 +222,15 @@ p {
 
 #assistant {
   background-color: #333;
-  width: 105%;
-  margin-top: 36px;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .mac-sm {
-  width: 100%;
+  width: 90%;
   height: auto;
   max-width: 500px;
 }
@@ -234,6 +248,11 @@ p {
 #assistant p {
   width: 80%;
   max-width: 500px;
+}
+
+#about-us {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .about-sm {
@@ -294,6 +313,10 @@ footer p {
     margin-right: 32px;
   }
 
+  #home h1 {
+    font-size: 40px;
+  }
+
   .zoom-house-container {
     width: 400px;
     height: 260px;
@@ -319,26 +342,23 @@ footer p {
     width: 97%;
   }
 
+  section {
+    width: 90%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   #home {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 64px;
-    margin-bottom: 124px;
-  }
-
-  .lg-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: space-around;
-    margin-right: 50px;
-    width: 50%;
   }
 
-  .lg-col p,
-  .lg-col h1 {
-    text-align: left;
+  #home h1 {
+    font-size: 50px;
   }
 
   h1 {
@@ -362,6 +382,18 @@ footer p {
     font-size: 55px;
   }
 
+  .problem-col-lg {
+    align-items: flex-start;
+    width: 50%;
+    max-width: 550px;
+  }
+
+  .problem-col-lg p,
+  .problem-col-lg h2 {
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
   #problem p {
     max-width: 700px;
   }
@@ -381,27 +413,21 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 64px;
+    margin-bottom: 64px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  .problem-col-lg {
-    align-items: flex-start;
-    width: 35%;
-  }
-
-  .problem-col-lg p,
-  .problem-col-lg h2 {
-    text-align: left;
-    margin-bottom: 0px;
+  #solution h2 {
+    margin-bottom: 100px;
   }
 
   #solution {
-    width: 100%;
-  }
-
-  #solution h2 {
-    margin-bottom: 100px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .solution-row-lg {
@@ -459,11 +485,7 @@ footer p {
     visibility: visible;
     height: auto;
     background-color: #333;
-    width: 105%;
-
-    margin-top: 36px;
-    padding-top: 36px;
-    padding-bottom: 72px;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -473,7 +495,6 @@ footer p {
 
   #assistant-wide p {
     font-size: 18px;
-    text-align: left;
     font-weight: 300;
   }
 
@@ -483,7 +504,8 @@ footer p {
   }
 
   .about-block {
-    margin-left: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .ass-col {
@@ -491,7 +513,15 @@ footer p {
   }
 
   .ass-col1 {
-    margin-top: 50px;
+    margin-top: 70px;
+  }
+
+  .ass-col2 h2 {
+    font-size: 42px;
+  }
+
+  .ass-col2 {
+    width: 55%;
   }
 
   .ass-col3 {
@@ -499,7 +529,7 @@ footer p {
   }
 
   .mac-lg {
-    width: 100%;
+    width: 95%;
   }
 
   .ass-col-p2 {
@@ -520,12 +550,12 @@ footer p {
 
   .about-us-wrap {
     margin-top: 48px;
-    width: 75%;
+    width: 105%;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left: 110px;
   }
 
   footer p {
